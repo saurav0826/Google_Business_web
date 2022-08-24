@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home-page-container2{
+    margin-top: 100px;
+    background: #f9f9f9;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    /* border: 2px solid red; */
+
+}
+
+.home-page-sub1-container2,.home-page-sub2-container2,.home-page-sub3-container2{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+    height: 200px;
+}
+
+.home-page-sub1-container2-img ,.home-page-sub2-container2-img ,.home-page-sub3-container2-img{
+    /* border: 2px solid green; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.home-page-sub1-container2-title, .home-page-sub2-container2-title,.home-page-sub3-container2-title{
+    /* border: 2px solid green; */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    /* line-height: 1.5; */
+}
+
+.home-page-sub1-container2-para, .home-page-sub2-container2-para ,.home-page-sub3-container2-para{
+    /* border: 2px solid green; */
+    text-align: center;
+    margin-bottom: 20px;
+    color: gray;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* circle */
+
+.Resources-flex-container3{
+    margin-top: 50px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    display: flex;
+    background-color: #f1f1f1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    position: relative;
+    /* border: 2px solid red; */
+  }
+
+  .Resources-flex-container3-center{
+    position: absolute;
+    top: 0.5rem;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    width: 10px;
+    height: 10px;
+    box-sizing: border-box;
+    margin-bottom: 3px;
+  }
+
+
+  .Resources-flex-container3-center1 ,.Resources-flex-container3-center2 ,.Resources-flex-container3-center3,
+  .Resources-flex-container3-center4,.Resources-flex-container3-center5{
+    transform: translate(-50% ,-50%);
+    width: 5px;
+    height: 5px;
+    box-sizing: border-box;
+    margin-bottom: 6px;
+  }
+
+  .Resources-flex-container3-circle{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-width: 5px;
+    /* border-color: #f1c40f #e74c3c #9b59b6 #2ecc71; */
+    box-sizing: border-box;
+    animation: animateCircle1 120s linear infinite;
+    /* background-color: orange; */
+    animation: UpDown 120s linear infinite;
+  }
+
+  .Resources-flex-container3-circle2{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-width: 5px;
+    /* border-color: #f1c40f #e74c3c #9b59b6 #2ecc71;*/
+    box-sizing: border-box;
+    animation: animateCircle1 120s linear infinite;
+    background-color: gray;
+    opacity: 0.5;
+  }
+
+  .test {
+    animation: UpDown 10s linear infinite;
+    position: absolute;
+    left: 49.2%;
+    bottom: 0;
+    font-size: 20px;
+    cursor: pointer;
+    color:orange;
+  
+  }
+  
+/* circle */
+
+
+
+
+@media (max-width:1000px) {
+    .home-page-container2{
+        width: 100%;
+    }
+}
+
+@media (max-width:800px) {
+    .home-page-sub1-container2,.home-page-sub2-container2,.home-page-sub3-container2{
+        margin: 20px;
+    }
+}
+
+@media (max-width:500px) {
+    .home-page-container2{
+        flex-direction: column;
+    }
+}
+
+
+@keyframes UpDown {
+    0% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 4em;
+    }
+    100% {
+      bottom: 0;
+    }
+  }
+
+
+  @media (max-width:1000px){
+
+    .Resources-flex-container3{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -50px;
+        height:80px;
+        border: 2px solid red;
+    }
+
+      .test {
+        left: 47.7%;
+      }
+
+      @keyframes UpDown {
+        0% {
+          bottom: 0;
+        }
+        50% {
+          bottom: 3em;
+        }
+        100% {
+          bottom: 0;
+        }
+      }
+}

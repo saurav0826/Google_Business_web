@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    background: #f9f9f9;
+    font-family: Poppins;
+}
+
+#navbar {
+    background: lightseagreen;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.8s;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin: 2em 3em;
+    font-size: 16px;
+}
+
